@@ -311,15 +311,18 @@
         <section class="content" id="contato">
             <div class="contato">
                 <h2>Entre em Contato</h2>
-                <form class="form" action="" method="post">
+                <form class="form" action="https://formsubmit.co/sonnenberg.caco@gmail.com" method="post">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Contato pelo site!">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/resposta.html">
                     <label for="nome">nome:</label>
-                    <input type="text" name="" id="nome">
+                    <input type="text" name="nome" id="nome">
                     <label for="email">email:</label>
-                    <input type="email" name="" id="email">
+                    <input type="email" name="email" id="email">
                     <label for="telefone">telefone:</label>
-                    <input type="tel" name="" id="telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input type="tel" name="telefone" id="telefone">
                     <label for="mensagem">mensagem:</label>
-                    <textarea name="" id="mensagem"></textarea>
+                    <textarea name="mensagem" id="mensagem"></textarea>
 
                     <button class="btn" type="submit">Enviar</button>
                 </form>
